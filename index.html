@@ -7,11 +7,15 @@
     <title>Vue API Js</title>
 </head>
 
-<body id="app">
+<body>
 
-    <h1>
-
-    </h1>
+    <main id="app">
+        
+        <button @click="mailGen">Genera ora!</button>
+        <h1 v-for="mail in emailList">
+            {{mail.response}}
+        </h1>
+    </main>
 
     <!--Script-->
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
